@@ -1,0 +1,43 @@
+/* Services Page Styles */
+
+.service-detail {
+    margin-bottom: 60px;
+}
+
+.service-detail h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-category {
+    padding: 60px 0;
+}
+
+.service-category:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-detail i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Anchor link offset for smooth scrolling */
+:target {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+} 
