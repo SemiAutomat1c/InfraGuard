@@ -1,0 +1,64 @@
+/* Page Banner */
+.page-banner {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+.section-light {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.section-dark {
+    background-color: var(--light-bg);
+    padding: 60px 0;
+}
+
+.section-subtitle {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Service Grid for Solutions Page */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .page-banner {
+        padding: 40px 0;
+    }
+    
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .page-banner p {
+        font-size: 1rem;
+    }
+} 

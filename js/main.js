@@ -121,4 +121,41 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.toggle('active');
         });
     }
+    
+    // Add animation classes to elements
+    const animateElements = document.querySelectorAll('.feature-box, .service-item, .news-item, .testimonial');
+    animateElements.forEach(element => {
+        element.classList.add('animate-fade-in');
+    });
+    
+    // Handle fixed header on scroll
+    const header = document.querySelector('header');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Add shadow to header when scrolling down
+        if (scrollTop > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+    
+    // Partners slider animation
+    const partnersContainer = document.querySelector('.partners-container');
+    if (partnersContainer && partnersContainer.children.length > 0) {
+        // Clone partners for infinite scroll effect
+        const partners = Array.from(partnersContainer.children);
+        partners.forEach(partner => {
+            const clone = partner.cloneNode(true);
+            partnersContainer.appendChild(clone);
+        });
+        
+        // Animate the partners container
+        partnersContainer.classList.add('animate');
+    }
 }); 

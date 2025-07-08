@@ -173,15 +173,16 @@ To change the color scheme, edit the CSS variables in the `styles.css` file:
 
 ### Logo
 
-Currently, the website uses a text logo "InfraGuard". To use an image logo:
+The website uses a logo image. If you need to update the logo:
 
-1. Add your logo image to the `images/` directory
-2. Edit the logo section in each HTML file:
+1. Replace the logo4.png file in the `images/` directory with your new logo
+2. Ensure the new logo has similar dimensions to maintain layout consistency
+3. If needed, adjust the logo size in the CSS by modifying the max-height property
 
 ```html
 <div class="logo">
     <a href="index.html">
-        <img src="images/your-logo.png" alt="InfraGuard Technologies">
+        <img src="images/logo4.png" alt="InfraGuard Technologies">
     </a>
 </div>
 ```

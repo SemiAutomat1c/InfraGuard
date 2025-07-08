@@ -1,4 +1,4 @@
-/* Industries Page Styles */
+/* Careers Page Styles */
 .page-header {
     background: linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     padding: 120px 0 60px;
@@ -39,96 +39,156 @@
     margin: 0 auto;
 }
 
-/* Industries Intro */
-.industries-intro {
+/* Careers Intro */
+.careers-intro {
     padding: 80px 0;
     background-color: var(--dark-bg);
     color: var(--light-text);
 }
 
-.industries-content {
+.careers-content {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
-.industries-content h2 {
+.careers-content h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: var(--light-text);
 }
 
-.industries-content p {
+.careers-content p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 40px;
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Industry Cards */
-.industry-section {
+/* Job Listings */
+.job-listings {
     padding: 80px 0;
     background-color: var(--light-bg);
 }
 
-.industry-section:nth-child(even) {
-    background-color: var(--secondary-color);
-    color: var(--light-text);
-}
-
-.industry-section h2 {
+.job-listings h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
     color: var(--secondary-color);
 }
 
-.industry-section:nth-child(even) h2 {
-    color: var(--light-text);
-}
-
-.industry-card {
+.job-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     padding: 30px;
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
 }
 
-.industry-card:hover {
-    transform: translateY(-10px);
+.job-card:hover {
+    transform: translateY(-5px);
 }
 
-.industry-card h3 {
+.job-card h3 {
     color: var(--secondary-color);
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.industry-card p {
+.job-card .job-meta {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.job-card p {
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.industry-card ul {
+.job-card ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 25px;
 }
 
-.industry-card ul li {
+.job-card ul li {
     color: #666;
     margin-bottom: 10px;
     padding-left: 25px;
     position: relative;
 }
 
-.industry-card ul li:before {
+.job-card ul li:before {
     content: '✓';
     color: var(--primary-color);
     position: absolute;
     left: 0;
+}
+
+.job-card .btn {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.job-card .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+}
+
+.benefits-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--light-text);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+    color: var(--light-text);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.benefit-item p {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* CTA Section */
@@ -162,54 +222,4 @@
 .cta-section .btn:hover {
     background-color: var(--secondary-color);
     color: var(--light-text);
-}
-
-.industry-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.industry-container:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.industry-image {
-    flex: 1;
-    min-height: 300px;
-    background-color: #ddd;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-}
-
-.industry-content {
-    flex: 1;
-}
-
-.industry-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.industry-content ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.industry-content ul li {
-    margin-bottom: 8px;
-}
-
-@media (max-width: 768px) {
-    .industry-container, 
-    .industry-container:nth-child(even) {
-        flex-direction: column;
-    }
-    
-    .industry-image {
-        width: 100%;
-    }
 } 

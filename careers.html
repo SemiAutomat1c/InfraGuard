@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - InfraGuard Technologies</title>
+    <title>Careers - InfraGuard Technologies</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/careers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="js/main.js" defer></script>
-    <script src="js/about.js" defer></script>
+    <script src="js/careers.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -22,7 +23,7 @@
             <nav>
                 <ul class="main-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html" class="active">ABOUT US</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown">
                         <a href="services.html">SERVICES</a>
                         <div class="dropdown-content">
@@ -50,7 +51,7 @@
                         </div>
                     </li>
                     <li><a href="industries.html">INDUSTRIES</a></li>
-                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="careers.html" class="active">CAREERS</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
@@ -65,98 +66,109 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>About Us</h1>
-            </div>
-        </section>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Team</h1>
+            <p>Explore career opportunities at InfraGuard Technologies</p>
+        </div>
+    </section>
 
-        <section class="about-intro">
-            <div class="container">
-                <div class="about-content">
-                    <h2>Who We Are</h2>
-                    <p>We provide end-to-end security solutions that safeguard businesses in both the physical and digital worlds. Our team includes professionally trained guards and IT security specialists focused on delivering proactive, responsive protection.</p>
-                    
-                    <div class="mission-vision">
-                        <div class="mission">
-                            <h3>Our Mission</h3>
-                            <p>To provide integrated security services that protect people, property, and digital infrastructure.</p>
-                        </div>
-                        <div class="vision">
-                            <h3>Our Vision</h3>
-                            <p>To become the most trusted name in full-spectrum security across Australia and beyond.</p>
-                        </div>
-                    </div>
+    <!-- Careers Intro -->
+    <section class="careers-intro">
+        <div class="container">
+            <div class="careers-content">
+                <h2>Why Work With Us</h2>
+                <p>At InfraGuard Technologies, we're building a team of talented professionals who are passionate about security and dedicated to protecting our clients' most valuable assets.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Growth Opportunities</h3>
+                    <p>We invest in our team members' professional development with ongoing training, certification support, and clear career advancement paths.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Collaborative Culture</h3>
+                    <p>Join a supportive team environment where knowledge sharing is encouraged and every voice is valued.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Meaningful Work</h3>
+                    <p>Make a real difference by protecting critical infrastructure and helping organizations stay secure in an increasingly complex threat landscape.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="why-choose-us">
-            <div class="container">
-                <h2>Why Choose Us</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Physical and Cybersecurity under one roof</h3>
-                        <p>Get comprehensive protection with a single provider, streamlining your security management.</p>
+    <!-- Job Listings -->
+    <section id="openings" class="job-listings">
+        <div class="container">
+            <h2>Open Positions</h2>
+            <p>Explore our current job openings and find your next career opportunity.</p>
+            
+            <div class="job-grid">
+                <div class="job-card">
+                    <h3>Security Operations Specialist</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Sydney, Australia</span>
+                        <span><i class="fas fa-building"></i> Physical Security</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-clock"></i>
-                        <h3>24/7 Security Operations</h3>
-                        <p>Round-the-clock monitoring and response to ensure your assets are always protected.</p>
+                    <p>We're looking for experienced security professionals to join our operations team, managing and overseeing security for client sites.</p>
+                    <ul>
+                        <li>5+ years of security operations experience</li>
+                        <li>Strong leadership and communication skills</li>
+                        <li>Security license and certifications</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Apply Now</a>
+                </div>
+                
+                <div class="job-card">
+                    <h3>Cybersecurity Analyst</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</span>
+                        <span><i class="fas fa-building"></i> Cybersecurity</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-handshake"></i>
-                        <h3>Trusted by businesses and developers</h3>
-                        <p>Our proven track record of reliability has earned the trust of clients across industries.</p>
+                    <p>Join our cybersecurity team to help identify, analyze, and respond to security threats for our clients' digital infrastructure.</p>
+                    <ul>
+                        <li>3+ years of cybersecurity experience</li>
+                        <li>Relevant certifications (CISSP, CEH, etc.)</li>
+                        <li>Incident response experience</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Apply Now</a>
+                </div>
+                
+                <div class="job-card">
+                    <h3>Business Development Manager</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Brisbane, Australia</span>
+                        <span><i class="fas fa-building"></i> Sales</span>
                     </div>
-                    <div class="feature-item">
-                        <i class="fas fa-certificate"></i>
-                        <h3>Compliant with local and international standards</h3>
-                        <p>We adhere to the highest security standards and regulatory requirements.</p>
-                    </div>
+                    <p>Help grow our business by developing relationships with new clients and expanding our services to existing clients.</p>
+                    <ul>
+                        <li>5+ years of B2B sales experience</li>
+                        <li>Security industry knowledge</li>
+                        <li>Strong networking abilities</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Apply Now</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="team-section">
-            <div class="container">
-                <h2>Our Leadership Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-image"></div>
-                        <h3>John Smith</h3>
-                        <p>Chief Executive Officer</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-image"></div>
-                        <h3>Sarah Johnson</h3>
-                        <p>Chief Operations Officer</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-image"></div>
-                        <h3>Michael Chen</h3>
-                        <p>Head of Physical Security</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-image"></div>
-                        <h3>Emma Williams</h3>
-                        <p>Chief Information Security Officer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Don't see the right position?</h2>
+            <p>We're always looking for talented individuals to join our team. Send us your resume and we'll keep it on file for future opportunities.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
 
-        <section class="cta-section">
-            <div class="container">
-                <h2>Ready to secure your business?</h2>
-                <p>Contact us today for a comprehensive security assessment.</p>
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-top">

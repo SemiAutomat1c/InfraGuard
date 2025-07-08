@@ -3,198 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - InfraGuard Technologies</title>
+    <title>Solutions - InfraGuard Technologies</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/main.js" defer></script>
-    <script src="js/services.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
                 <a href="index.html">
-                    <h1>InfraGuard</h1>
+                    <img src="images/logo4.png" alt="InfraGuard Technologies Logo">
                 </a>
             </div>
             <nav>
-                <ul class="main-nav">
+                <ul class="main-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-column">
+                        <a href="services.html" class="active">SERVICES</a>
+                        <div class="dropdown-content">
+                            <div class="security-column">
                                 <h3>Physical Security Solutions</h3>
-                                <a href="services.html#infrastructure-guarding">Infrastructure Guarding</a>
-                                <a href="services.html#construction-site">Construction Site Security</a>
-                                <a href="services.html#onsite-security">24/7 On-Site Security</a>
-                                <a href="services.html#access-control">Access Control</a>
-                                <a href="services.html#risk-assessment">Security Risk Assessment</a>
+                                <ul>
+                                    <li><a href="services.html#infrastructure">Infrastructure Guarding</a></li>
+                                    <li><a href="services.html#construction">Construction Site Security</a></li>
+                                    <li><a href="services.html#onsite">24/7 On-Site Security</a></li>
+                                    <li><a href="services.html#access">Access Control</a></li>
+                                    <li><a href="services.html#risk">Security Risk Assessment</a></li>
+                                </ul>
                             </div>
-                            <div class="dropdown-column">
+                            <div class="security-column">
                                 <h3>Cybersecurity Solutions</h3>
-                                <a href="services.html#network-security">Network Security</a>
-                                <a href="services.html#firewall">Firewall & Intrusion Prevention</a>
-                                <a href="services.html#endpoint">Endpoint Protection</a>
-                                <a href="services.html#email-security">Email Security</a>
-                                <a href="services.html#vulnerability">Vulnerability Assessment</a>
-                                <a href="services.html#consulting">Cybersecurity Consulting</a>
+                                <ul>
+                                    <li><a href="services.html#network">Network Security</a></li>
+                                    <li><a href="services.html#firewall">Firewall & Intrusion Prevention</a></li>
+                                    <li><a href="services.html#endpoint">Endpoint Protection</a></li>
+                                    <li><a href="services.html#email">Email Security</a></li>
+                                    <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                                    <li><a href="services.html#consulting">Cybersecurity Consulting</a></li>
+                                </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="industries.html">Industries</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="industries.html">INDUSTRIES</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
-            <div class="cta-button">
-                <a href="contact.html" class="btn">Request a Quote</a>
+            <div class="header-cta">
+                <a href="contact.html" class="btn">REQUEST A QUOTE</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive security solutions for your business</p>
+            <h1>Our Solutions</h1>
         </div>
     </section>
 
-    <section id="physical" class="service-category">
+    <!-- Services Intro -->
+    <section class="services-intro">
+        <div class="container">
+            <div class="services-content">
+                <h2>Comprehensive Security Solutions</h2>
+                <p>At InfraGuard Technologies, we provide integrated security solutions that protect your business from both physical and digital threats. Our expert team delivers customized security strategies that evolve with your needs and the changing threat landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Physical Security Solutions -->
+    <section id="physical-security" class="physical-security">
         <div class="container">
             <h2>Physical Security Solutions</h2>
-            <p>Our physical security services provide robust protection for your infrastructure, assets, and personnel.</p>
-            
-            <div class="service-grid">
-                <div id="infrastructure-guarding" class="service-detail">
-                    <i class="fas fa-building"></i>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
                     <h3>Infrastructure Guarding</h3>
-                    <p>On-site personnel securing industrial and critical infrastructure, ensuring protection from theft, trespassing, and damage. Our trained guards maintain vigilant oversight of your facilities, deterring unauthorized access and responding promptly to security incidents.</p>
+                    <p>Professional on-site security personnel protecting your facilities 24/7.</p>
+                    <ul>
+                        <li>Trained security officers</li>
+                        <li>Access control management</li>
+                        <li>Emergency response protocols</li>
+                        <li>Regular security patrols</li>
+                    </ul>
                 </div>
                 
-                <div id="construction-site" class="service-detail">
+                <div class="service-item">
                     <i class="fas fa-hard-hat"></i>
                     <h3>Construction Site Security</h3>
-                    <p>Dedicated guarding solutions for active and inactive construction projects to deter unauthorized access and material loss. We understand the unique security challenges of construction sites and provide specialized protection for equipment, materials, and the site itself.</p>
+                    <p>Specialized security solutions for construction projects and sites.</p>
+                    <ul>
+                        <li>Site perimeter security</li>
+                        <li>Equipment protection</li>
+                        <li>Material theft prevention</li>
+                        <li>After-hours surveillance</li>
+                    </ul>
                 </div>
                 
-                <div id="onsite-security" class="service-detail">
+                <div class="service-item">
                     <i class="fas fa-clock"></i>
                     <h3>24/7 On-Site Security</h3>
-                    <p>Uniformed security officers for round-the-clock protection of your premises. Our professional security personnel are trained to handle various security situations, providing continuous monitoring and immediate response to potential threats.</p>
+                    <p>Round-the-clock protection for your premises and assets.</p>
+                    <ul>
+                        <li>Continuous monitoring</li>
+                        <li>Incident response</li>
+                        <li>Visitor management</li>
+                        <li>Security reporting</li>
+                    </ul>
                 </div>
                 
-                <div id="access-control" class="service-detail">
-                    <i class="fas fa-door-open"></i>
+                <div class="service-item">
+                    <i class="fas fa-key"></i>
                     <h3>Access Control</h3>
-                    <p>Guard-managed checkpoints, visitor tracking, and entry/exit logging. Our access control services ensure that only authorized personnel can enter sensitive areas, maintaining a secure environment while facilitating legitimate business operations.</p>
+                    <p>Advanced access management systems for controlled entry.</p>
+                    <ul>
+                        <li>ID verification</li>
+                        <li>Visitor tracking</li>
+                        <li>Access logs management</li>
+                        <li>Restricted area control</li>
+                    </ul>
                 </div>
                 
-                <div id="risk-assessment" class="service-detail">
-                    <i class="fas fa-search"></i>
+                <div class="service-item">
+                    <i class="fas fa-clipboard-check"></i>
                     <h3>Security Risk Assessment</h3>
-                    <p>Site-specific evaluation and planning to design effective security coverage. Our security experts conduct thorough assessments of your premises, identifying vulnerabilities and recommending appropriate security measures tailored to your specific needs.</p>
+                    <p>Comprehensive evaluation of security vulnerabilities.</p>
+                    <ul>
+                        <li>Site security audit</li>
+                        <li>Threat analysis</li>
+                        <li>Risk mitigation planning</li>
+                        <li>Security recommendations</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="cyber" class="service-category">
+    <!-- Cybersecurity Solutions -->
+    <section id="cyber-security" class="cyber-security">
         <div class="container">
             <h2>Cybersecurity Solutions</h2>
-            <p>Our cybersecurity services protect your digital assets and information systems from evolving threats.</p>
-            
-            <div class="service-grid">
-                <div id="network-security" class="service-detail">
+            <div class="services-grid">
+                <div class="service-item">
                     <i class="fas fa-network-wired"></i>
                     <h3>Network Security</h3>
-                    <p>Protect your company's internal systems from unauthorized access and cyberattacks. Our network security solutions include comprehensive monitoring, threat detection, and response mechanisms to safeguard your critical network infrastructure.</p>
+                    <p>Comprehensive protection for your digital infrastructure.</p>
+                    <ul>
+                        <li>24/7 network monitoring</li>
+                        <li>Threat detection & response</li>
+                        <li>Security patch management</li>
+                        <li>Network access control</li>
+                    </ul>
                 </div>
                 
-                <div id="firewall" class="service-detail">
-                    <i class="fas fa-shield-alt"></i>
+                <div class="service-item">
+                    <i class="fas fa-shield-virus"></i>
                     <h3>Firewall & Intrusion Prevention</h3>
-                    <p>Set up and manage defenses that detect and block malicious activity. Our advanced firewall solutions and intrusion prevention systems provide robust protection against external threats, keeping your systems secure from unauthorized access.</p>
+                    <p>Advanced threat prevention and network defense.</p>
+                    <ul>
+                        <li>Next-gen firewall protection</li>
+                        <li>Real-time threat blocking</li>
+                        <li>Traffic analysis</li>
+                        <li>Security policy enforcement</li>
+                    </ul>
                 </div>
                 
-                <div id="endpoint" class="service-detail">
-                    <i class="fas fa-laptop"></i>
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
                     <h3>Endpoint Protection</h3>
-                    <p>Safeguard employee devices against malware, ransomware, and phishing. Our endpoint protection solutions secure all devices connected to your network, preventing security breaches that could compromise your entire system.</p>
+                    <p>Secure all devices connected to your network.</p>
+                    <ul>
+                        <li>Anti-malware protection</li>
+                        <li>Device management</li>
+                        <li>Data encryption</li>
+                        <li>Remote device security</li>
+                    </ul>
                 </div>
                 
-                <div id="email-security" class="service-detail">
-                    <i class="fas fa-envelope"></i>
+                <div class="service-item">
+                    <i class="fas fa-envelope-open-text"></i>
                     <h3>Email Security</h3>
-                    <p>Stop spam, spoofing, and phishing attempts before they hit your inbox. Our email security services filter out malicious emails and protect your organization from one of the most common vectors for cyberattacks.</p>
+                    <p>Protect your organization from email-based threats.</p>
+                    <ul>
+                        <li>Spam filtering</li>
+                        <li>Phishing protection</li>
+                        <li>Email encryption</li>
+                        <li>Data loss prevention</li>
+                    </ul>
                 </div>
                 
-                <div id="vulnerability" class="service-detail">
-                    <i class="fas fa-bug"></i>
+                <div class="service-item">
+                    <i class="fas fa-search"></i>
                     <h3>Vulnerability Assessment</h3>
-                    <p>Identify weak points in your IT infrastructure and recommend solutions. Our security experts conduct thorough vulnerability assessments to identify potential security gaps and provide actionable recommendations to strengthen your defenses.</p>
+                    <p>Identify and address security weaknesses.</p>
+                    <ul>
+                        <li>Security testing</li>
+                        <li>Vulnerability scanning</li>
+                        <li>Risk assessment</li>
+                        <li>Remediation planning</li>
+                    </ul>
                 </div>
                 
-                <div id="consulting" class="service-detail">
-                    <i class="fas fa-comments"></i>
+                <div class="service-item">
+                    <i class="fas fa-users-cog"></i>
                     <h3>Cybersecurity Consulting</h3>
-                    <p>Custom cyber defense strategies tailored to your business operations. Our cybersecurity consultants work closely with your team to develop and implement security strategies that align with your business goals and address your specific security challenges.</p>
+                    <p>Expert guidance for your security strategy.</p>
+                    <ul>
+                        <li>Security planning</li>
+                        <li>Compliance consulting</li>
+                        <li>Security training</li>
+                        <li>Incident response planning</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Need a customized security solution?</h2>
-            <p>Our experts will work with you to develop a security plan tailored to your specific needs.</p>
-            <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            <h2>Ready to Secure Your Business?</h2>
+            <p>Let our experts create a comprehensive security solution tailored to your needs.</p>
+            <a href="contact.html" class="btn">Get Started Today</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>InfraGuard Technologies</h3>
-                    <p>From physical guards to digital defenses — we secure your assets, infrastructure, and data.</p>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo4.png" alt="InfraGuard Technologies Logo">
+                    <p>InfraGuard Technologies is Australia's leading provider of integrated physical and cybersecurity solutions, with over 15 years of experience protecting businesses and infrastructure.</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
+                <div class="footer-menu">
+                    <h3>About Us</h3>
                     <ul>
-                        <li><a href="#physical">Physical Security</a></li>
-                        <li><a href="#cyber">Cybersecurity</a></li>
-                        <li><a href="#risk-assessment">Risk Assessment</a></li>
-                        <li><a href="#consulting">Consulting</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
+                <div class="footer-menu">
+                    <h3>Delivering Value</h3>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Partner Profitability</a></li>
+                        <li><a href="#">Training & Enablement</a></li>
+                        <li><a href="#">Physical Security</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> info@infraguard.com</li>
-                        <li><i class="fas fa-phone"></i> +61 XXX XXX XXXX</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Unit 123, Business Center, Your City, Australia</li>
+                <div class="footer-menu">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:1800123456">Phone: 1800 123 456</a></li>
+                        <li><a href="mailto:info@infraguard.com.au">Email: info@infraguard.com.au</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3>Connect With Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 InfraGuard Technologies. All rights reserved.</p>
+                <p>Copyright © 2025 InfraGuard Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html> 

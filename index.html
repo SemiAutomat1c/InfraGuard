@@ -3,216 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfraGuard Technologies - Complete Protection, Online and On-Site</title>
+    <title>InfraGuard Technologies</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/main.js" defer></script>
-    <script src="js/home.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
                 <a href="index.html">
-                    <h1>InfraGuard</h1>
+                    <img src="images/logo4.png" alt="InfraGuard Technologies Logo">
                 </a>
             </div>
             <nav>
-                <ul class="main-nav">
+                <ul class="main-menu">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-column">
+                        <a href="services.html">SERVICES</a>
+                        <div class="dropdown-content">
+                            <div class="security-column">
                                 <h3>Physical Security Solutions</h3>
-                                <a href="services.html#infrastructure-guarding">Infrastructure Guarding</a>
-                                <a href="services.html#construction-site">Construction Site Security</a>
-                                <a href="services.html#onsite-security">24/7 On-Site Security</a>
-                                <a href="services.html#access-control">Access Control</a>
-                                <a href="services.html#risk-assessment">Security Risk Assessment</a>
+                                <ul>
+                                    <li><a href="services.html#infrastructure">Infrastructure Guarding</a></li>
+                                    <li><a href="services.html#construction">Construction Site Security</a></li>
+                                    <li><a href="services.html#onsite">24/7 On-Site Security</a></li>
+                                    <li><a href="services.html#access">Access Control</a></li>
+                                    <li><a href="services.html#risk">Security Risk Assessment</a></li>
+                                </ul>
                             </div>
-                            <div class="dropdown-column">
+                            <div class="security-column">
                                 <h3>Cybersecurity Solutions</h3>
-                                <a href="services.html#network-security">Network Security</a>
-                                <a href="services.html#firewall">Firewall & Intrusion Prevention</a>
-                                <a href="services.html#endpoint">Endpoint Protection</a>
-                                <a href="services.html#email-security">Email Security</a>
-                                <a href="services.html#vulnerability">Vulnerability Assessment</a>
-                                <a href="services.html#consulting">Cybersecurity Consulting</a>
+                                <ul>
+                                    <li><a href="services.html#network">Network Security</a></li>
+                                    <li><a href="services.html#firewall">Firewall & Intrusion Prevention</a></li>
+                                    <li><a href="services.html#endpoint">Endpoint Protection</a></li>
+                                    <li><a href="services.html#email">Email Security</a></li>
+                                    <li><a href="services.html#vulnerability">Vulnerability Assessment</a></li>
+                                    <li><a href="services.html#consulting">Cybersecurity Consulting</a></li>
+                                </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="industries.html">Industries</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="industries.html">INDUSTRIES</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
-            <div class="cta-button">
-                <a href="contact.html" class="btn">Request a Quote</a>
+            <div class="header-cta">
+                <a href="contact.html" class="btn">REQUEST A QUOTE</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Complete Protection, Online and On-Site.</h1>
-                <p>From physical guards to digital defenses — we secure your assets, infrastructure, and data.</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn btn-primary">Request a Quote</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('images/protection.jpg');">
+                <div class="slide-content">
+                    <h1>Complete Protection</h1>
+                    <h2>Online and On-Site</h2>
+                    <a href="#" class="btn btn-light">VIEW UPDATE</a>
                 </div>
+            </div>
+            <div class="slide" style="background-image: url('images/security.png');">
+                <div class="slide-content">
+                    <h1>Physical Security</h1>
+                    <h2>For Your Infrastructure</h2>
+                    <a href="#" class="btn btn-light">DOWNLOAD REPORT</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/cyber.png');">
+                <div class="slide-content">
+                    <h1>Cybersecurity Solutions</h1>
+                    <h2>For Modern Businesses</h2>
+                    <a href="#" class="btn btn-light">SUBSCRIBE HERE</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
+    <!-- Intro Section -->
     <section class="intro">
         <div class="container">
-            <div class="intro-content">
-                <p>We are a dual-service security provider offering <strong>infrastructure guard services</strong> and <strong>cybersecurity solutions</strong> for businesses, construction sites, government facilities, and private organizations. Whether it's protecting your premises or shielding your systems from cyber threats - we've got you covered.</p>
-            </div>
+            <h2 class="section-title">Australia's leading security provider for physical infrastructure and cybersecurity solutions.</h2>
+            <p>From physical guards to digital defenses — we secure your assets, infrastructure, and data. Our team includes professionally trained guards and IT security specialists focused on delivering proactive, responsive protection.</p>
         </div>
     </section>
 
-    <section class="key-services">
+    <!-- Value Proposition -->
+    <section class="value-prop">
         <div class="container">
-            <h2>Key Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Infrastructure Guarding</h3>
-                    <p>Professional on-site security personnel protecting your physical assets.</p>
+            <h2 class="section-title">Benefit from Partnering with the Best</h2>
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <div class="needs-image"></div>
+                    <h3>Access to the world's leading security technologies</h3>
+                    <p>Get access to world-class security systems including physical security, cybersecurity, and integrated solutions from leading brands.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>24/7 On-Site Security</h3>
-                    <p>Round-the-clock protection for your premises and assets.</p>
+                <div class="feature-box">
+                    <div class="needs-image"></div>
+                    <h3>Leverage over 15 years' experience in the Australian security industry</h3>
+                    <p>Thanks to our highly competitive strategies, InfraGuard's partners continue to win more deals through the positioning of unique solutions.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-hard-hat"></i>
-                    <h3>Construction Site Protection</h3>
-                    <p>Specialized security for active and inactive construction projects.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Cybersecurity Solutions</h3>
-                    <p>Comprehensive digital protection for your business systems.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-door-open"></i>
-                    <h3>Access Control & Risk Assessments</h3>
-                    <p>Manage entry points and identify security vulnerabilities.</p>
+                <div class="feature-box">
+                    <div class="needs-image"></div>
+                    <h3>We are here for you</h3>
+                    <p>InfraGuard is customer-centric and focused on establishing and developing strong long-term relationships with its partner base.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services Grid -->
+    <section class="services-grid">
+        <div class="container">
+            <h2 class="section-title">Key Services</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Infrastructure Guarding</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 On-Site Security</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction Site Protection</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Cybersecurity Solutions</h3>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Access Control & Risk Assessments</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
     <section class="trust-section">
         <div class="container">
-            <h2>Why Choose Us</h2>
+            <h2 class="section-title">Why Trust InfraGuard?</h2>
             <div class="trust-grid">
                 <div class="trust-item">
-                    <i class="fas fa-certificate"></i>
+                    <div class="trust-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
                     <h3>Licensed and Insured</h3>
+                    <p>Full compliance and comprehensive coverage for your peace of mind</p>
                 </div>
                 <div class="trust-item">
-                    <i class="fas fa-user-tie"></i>
+                    <div class="trust-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
                     <h3>Professionally Trained Personnel</h3>
+                    <p>Expert staff with ongoing training and certification</p>
                 </div>
                 <div class="trust-item">
-                    <i class="fas fa-shield-virus"></i>
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
                     <h3>Physical + Cyber Protection</h3>
+                    <p>Comprehensive security coverage across all domains</p>
                 </div>
                 <div class="trust-item">
-                    <i class="fas fa-expand-arrows-alt"></i>
+                    <div class="trust-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Reliable & Scalable Deployment</h3>
+                    <p>Flexible solutions that grow with your needs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="industries">
+    <!-- CTA Banner -->
+    <section class="cta-banner">
         <div class="container">
-            <h2>Industries We Serve</h2>
-            <div class="industries-grid">
-                <div class="industry-item">
-                    <i class="fas fa-building"></i>
-                    <h3>Construction & Real Estate</h3>
+            <h2>Partner with <strong>the Best.</strong></h2>
+            <p>With over a decade of experience, InfraGuard is trusted by hundreds of businesses across Australia. The key to our success is our focus on establishing and developing strong, long-term relationships.</p>
+            <a href="contact.html" class="btn btn-white">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Partners Slider -->
+    <section class="partners-slider">
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="partners-container">
+                <div class="partners-track">
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
                 </div>
-                <div class="industry-item">
-                    <i class="fas fa-warehouse"></i>
-                    <h3>Logistics & Warehousing</h3>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-industry"></i>
-                    <h3>Industrial Zones</h3>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-university"></i>
-                    <h3>Financial Services</h3>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-city"></i>
-                    <h3>Local Government Units</h3>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-laptop"></i>
-                    <h3>IT-Enabled Businesses</h3>
+                <!-- Duplicate track for seamless scrolling -->
+                <div class="partners-track">
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="needs-image"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <h2>Let's secure your business - online and on the ground.</h2>
-            <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            <h2 class="section-title">The world's leading businesses, secured.</h2>
+            <p>Partnering with InfraGuard provides you with access to the world's leading security experts and a range of unique value-added services.</p>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We've been working with InfraGuard for over 5 years now and we could not be more pleased. InfraGuard are professional, personable and offer outstanding service. Having locally based staff and a personal understanding of our needs gives them the edge over other security providers."</p>
+                        <div class="testimonial-author">
+                            <h4>John Smith,</h4>
+                            <p>Co-founder and Director, Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Our company has relied on InfraGuard's services for over 10 years because they offer excellent pre-sales technical resources, efficient logistics, competitive pricing and flexible payment terms."</p>
+                        <div class="testimonial-author">
+                            <h4>Jane Doe,</h4>
+                            <p>Managing Director, Enterprise Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">What's New</h2>
+            <p>Keep ahead of the latest trends, discover innovative solutions with our thought-leadership pieces and stay connected to the latest developments from InfraGuard.</p>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-image needs-image"></div>
+                    <h3>The Evolving Cyber Threat Landscape: How to Stay Ahead</h3>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-image needs-image"></div>
+                    <h3>Physical Security Innovations for Construction Sites</h3>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-image needs-image"></div>
+                    <h3>How to Implement Effective Access Control Systems</h3>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-image needs-image"></div>
+                    <h3>Transforming Security Spaces in 2025</h3>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>InfraGuard Technologies</h3>
-                    <p>From physical guards to digital defenses — we secure your assets, infrastructure, and data.</p>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo4.png" alt="InfraGuard Technologies Logo">
+                    <p>InfraGuard Technologies is Australia's leading provider of integrated physical and cybersecurity solutions, with over 15 years of experience protecting businesses and infrastructure.</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
+                <div class="footer-menu">
+                    <h3>About Us</h3>
                     <ul>
-                        <li><a href="services.html#physical">Physical Security</a></li>
-                        <li><a href="services.html#cyber">Cybersecurity</a></li>
-                        <li><a href="services.html#risk">Risk Assessment</a></li>
-                        <li><a href="services.html#consulting">Consulting</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
+                <div class="footer-menu">
+                    <h3>Delivering Value</h3>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Partner Profitability</a></li>
+                        <li><a href="#">Training & Enablement</a></li>
+                        <li><a href="#">Physical Security</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> info@infraguard.com</li>
-                        <li><i class="fas fa-phone"></i> +61 XXX XXX XXXX</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Unit 123, Business Center, Your City, Australia</li>
+                <div class="footer-menu">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:1800123456">Phone: 1800 123 456</a></li>
+                        <li><a href="mailto:info@infraguard.com.au">Email: info@infraguard.com.au</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <h3>Connect With Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 InfraGuard Technologies. All rights reserved.</p>
+                <p>Copyright © 2025 InfraGuard Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html> 
